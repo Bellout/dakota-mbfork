@@ -273,8 +273,9 @@ particular platform or shell.
    $ cp $DAK_SRC/cmake/BuildDakotaTemplate.cmake \
         $DAK_SRC/cmake/BuildDakotaCustom.cmake
 
-5. Update $DAK_SRC/cmake/BuildDakotaCustom.cmake file to reflect your platform
-   configuration. Instructions are provided in this file.
+5. Update $DAK_SRC/cmake/BuildDakotaCustom.cmake file to 
+reflect your platform  configuration. Instructions are 
+provided in this file.
 
 6. Configure and build Dakota. 
 
@@ -283,9 +284,11 @@ particular platform or shell.
    $ make [-j#]
    $ make install
 
-7. Set paths and library paths. In the instructions below, $DAK_INSTALL
-   refers to the Dakota installation path you specified for the variable
-   CMAKE_INSTALL_PREFIX in your BuildCustom.cmake file.
+7. Set paths and library paths. In the instructions below, 
+
+$DAK_INSTALL refers to the Dakota installation path you 
+specified for the variable CMAKE_INSTALL_PREFIX in your 
+BuildCustom.cmake file.
 
    $ export PATH=$DAK_INSTALL/bin:$DAK_INSTALL/test:$PATH
    $ export LD_LIBRARY_PATH=$DAK_INSTALL/lib:$DAK_INSTALL/bin:$LD_LIBRARY_PATH
@@ -299,10 +302,12 @@ Miscellaneous Notes:
 
  * 'make install' requires write privileges in CMAKE_INSTALL_PREFIX.
 
- * Executing cmake without any options will result in an attempt to
-   build with as many vendor algorithms and packages as are available
-   in the distribution.  Options below and on the Dakota website
-   describe how to turn off features.
+ * Executing cmake without any options will result in an 
+ attempt to build with as many vendor algorithms and packages 
+ as are available in the distribution.  
+ 
+ Options below and on the Dakota website 
+ describe how to turn off features.
 
  * Once make has successfully completed, the generated Dakota
    executables (dakota and dakota_restart_util) will reside in
