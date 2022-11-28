@@ -5,3 +5,5 @@ local
 cscope*
 tags
 .DS_Store
+
+build/*
